@@ -1,5 +1,5 @@
 import { deleteFav } from "../action/action";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 
 export default function FavMovie({ title, id }) {
   const dispatch = useDispatch();

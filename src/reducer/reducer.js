@@ -10,7 +10,7 @@ const reducer = (state = initialState, action) => {
   switch (action.type) {
     case FAV_EKLE:
       const realReturn =
-        state.favMovies.id == state.movies[action.payload]
+        state.favMovies.id !== state.movies[action.payload]
           ? {
               ...state,
               favMovies: [...state.favMovies, state.movies[action.payload]],
